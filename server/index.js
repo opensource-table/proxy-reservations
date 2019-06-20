@@ -18,7 +18,7 @@ app.get('/:id', (req, res) => {
 app.get('/:id/reservations', (req, res) => {
   // console.log("i am inside of get")
   const resID = Number(req.params.id);
-  axios.get(`http://http://54.215.236.80:3020/${resID}/reservations`)
+  axios.get(`http://54.215.236.80:3020/${resID}/reservations`)
   .then(response => {
     res.status(200).send(response.data);
   })
